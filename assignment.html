@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <style>
+        table {
+            border: 4px solid rgb(1, 1, 13);
+        }
+
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="registrationForm" action="post">
+        <table border="4px">
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="userName" id="userNameLabel" style="color: blue;">Username :</label>
+                    </td>
+                    <td>
+                        <input type="text" id="userName" name="user-name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="firstName"  style="color: red;">First Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="firstName" name="firstName">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lastName"  style="color:brown;">Last Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="lastName" name="lastName">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email"  style="color: green;">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password"  style="color: chocolate;">Password :</label>
+                    </td>
+                    <td>
+                        <input type="password" id="password" name="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="contact">Contact :</label>
+                    </td>
+                    <td>
+                        <input type="number" id="contact" name="contact">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Interest:</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="checkboxInterest1" name="java" value="Java">
+                        <label> Java </label>
+                        <input type="checkbox" id="checkboxInterest1" name="python" value="python">
+                        <label> python </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Previous Employer:</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="radioYes" name="radio" value="yes">
+                        <label> Yes </label>
+                        <input type="radio" id="radioNo" name="radio" value="no">
+                        <label> No </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="textArea">Text Area:</label>
+                    </td>
+                    <td>
+                        <textarea id="textArea" name="textArea" rows="4" cols="4"
+                            placeholder="Review comments"></textarea>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>
